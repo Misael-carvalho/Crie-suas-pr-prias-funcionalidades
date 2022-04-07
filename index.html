@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie suas próprias funcionalidades</title>
+</head>
+<body>
+    
+    <script>
+
+        function exibeAlerta(mensagem, x) {
+            alert("***" + mensagem + x + "***");
+        }
+    
+        var idade1 = 10;
+        var idade2 = 20;
+        var idade3 = 30;
+        var totalIdades = idade1 + idade2 + idade3;
+        var mediaIdades = totalIdades/3;
+    
+        exibeAlerta("Total de idades é ", totalIdades);
+        exibeAlerta("A média das idades é " , mediaIdades);
+
+        function pulaLinha(){
+            document.write("<br>");
+        } 
+        function frase(x){
+            document.write("A diferença da minha idade é: " + x);
+            pulaLinha();
+        } 
+        var minhaIdade = prompt('Idade Misael');
+        var idadeIrmao = prompt('Idade Lucas');
+        var diferencaIdade = idadeIrmao - minhaIdade;
+
+        frase(diferencaIdade);
+        
+
+        function frases(x){
+            document.write("A Quantidade de gerações até hoje é : " + x);
+           
+        } 
+        var anosBrasil = 2022 - 1500;
+        var geracoes = anosBrasil / 28;
+        frases(geracoes);
+
+        function mostra(frase){
+            document.write("<big>"+frase+"<big>");
+            pularLinha();
+        }
+        var ano = 2022;
+        mostra("A minha idade é : " + (ano - 1990) + " anos.");
+        mostra("A minha idade é : " + (ano - 1989) + " anos.");
+        mostra("A minha idade é : " + (ano - 1988) + " anos.");
+
+        
+    </script>
+</body>
+</html>
